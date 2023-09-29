@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ff5353;
+
+  z-index: 1;
+  position: fixed;
+}
+
+.block-1 {
+  width: 35%;
+  height: 50%;
+  box-sizing: border-box;
+  background: #ffc853;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-1:hover {
+  background: #ffbb27;
+}
+
+.block-2 {
+  width: 35%;
+  height: 50%;
+  box-sizing: border-box;
+  background: #98ff53;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-2:hover {
+  background: #74ff18;
+}
+
+.block-3 {
+  width: 35%;
+  height: 50%;
+  box-sizing: border-box;
+  background: #53ffa0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-3:hover {
+  background: #21ff85;
+}
+
+.block-4 {
+  width: 35%;
+  height: 50%;
+  box-sizing: border-box;
+  background: #53d7ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-4:hover {
+  background: #22cbff;
+}
+
+.block-5 {
+  display: flex;
+  width: 30%;
+  height: 45%;
+  box-sizing: border-box;
+  background: #c853ff;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-5:hover {
+  background: #b61aff;
+}
+
+.block-6 {
+  display: flex;
+  width: 30%;
+  height: 45%;
+  box-sizing: border-box;
+  background: #ff53b7;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+
+  transition: 0.5s;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.block-6:hover {
+  background: #ff20a2;
+}
+
+/* .image-div {
+  width: 90%;
+  height: 75%;
+
+  background-image: url("https://i.pinimg.com/736x/5b/2b/ad/5b2bad75c17afc627beda4eae5f0fb21--new-england-fall-foliage-new-england-autumn.jpg");
+
+  position: absolute;
+  top: 41%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.image-div:hover {
+  width: 93%;
+  height: 78%;
+}
+
+.image-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(500px);
+  transition: 0.5s;
+}
+
+.image-div:hover::before {
+  transform: skewX(45deg) translateX(-500px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+  transition: 0.5s;
+
+  cursor: pointer;
+}
+
+.image-div:hover .overlay {
+  background: rgba(255, 255, 255, 0);
+} */
+
+.block-1:hover h2,
+.block-2:hover h2,
+.block-3:hover h2,
+.block-4:hover h2,
+.block-5:hover h2,
+.block-6:hover h2 {
+  transform: scale(1.5);
+}
+
+.block-1:hover h3,
+.block-2:hover h3,
+.block-3:hover h3,
+.block-4:hover h3,
+.block-5:hover h3,
+.block-6:hover h3 {
+  transform: scale(1.1);
+}
+
+.block-1 h2 {
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 47%;
+  font-size: 60px;
+  transition: 0.5s;
+  transform-origin: right;
+
+  cursor: pointer;
+}
+
+.block-1 h3 {
+  color: white;
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: right;
+  text-align: right;
+
+  cursor: pointer;
+}
+
+.block-2 h2 {
+  color: white;
+  position: absolute;
+  bottom: 5% !important;
+  left: 47%;
+  font-size: 60px;
+  transition: 0.5s;
+  transform-origin: right;
+
+  cursor: pointer;
+}
+
+.block-2 h3 {
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  right: 4%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: right;
+  text-align: right;
+
+  cursor: pointer;
+}
+
+.block-3 h2 {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  right: 47%;
+  font-size: 60px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform-origin: left;
+}
+
+.block-3 h3 {
+  color: white;
+  position: absolute;
+  bottom: 25%;
+  left: 4%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: left;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.block-4 h2 {
+  color: white;
+  position: absolute;
+  top: 5%;
+  right: 47%;
+  font-size: 60px;
+  transition: 0.5s;
+  transform-origin: left;
+
+  cursor: pointer;
+}
+
+.block-4 h3 {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: left;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.block-5 h2 {
+  color: white;
+  position: absolute;
+  top: 5%;
+  font-size: 60px;
+  transition: 0.5s;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.block-5 h3 {
+  color: white;
+  position: absolute;
+  top: 23%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.block-6 h2 {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  font-size: 60px;
+  transition: 0.5s;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.block-6 h3 {
+  color: white;
+  position: absolute;
+  bottom: 23%;
+  font-size: 30px;
+  transition: 0.5s;
+  transform-origin: center;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.overlay {
+  /* display: none; */
+  position: fixed;
+  /* top: 0; */
+  /* right: -50%; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padinng: 40%;
+  /* padding: 100%; */
+  /* align-content: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.bom {
+  position: absolute;
+  transform: scale(0);
+  animation: fadeIn-overlay 1s ease 1 both;
+  /* top: 50%; */
+  /* position: static; */
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  /* padding-top: 21%; */
+  /* transform-origin: center; */
+}
+
+@keyframes fadeIn-overlay {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.popup {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* width: 220%; */
+  /* top: 20px; */
+  position: relative;
+  /* align-content: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0; /* Начальная прозрачность */
+  width: 25%;
+  animation: fadeIn 1s ease 1 both; /* Запуск анимации */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.overlay {
+  opacity: 1; /* Начальная прозрачность */
+  transition: opacity 0.3s ease; /* Анимация прозрачности с продолжительностью 0.3 секунды и функцией сглаживания ease */
+}
+
+.overlay.hidden {
+  opacity: 0; /* Конечная прозрачность */
+  pointer-events: none; /* Элемент не будет реагировать на события мыши */
+}
+
+.f11-img {
+  width: 4%;
+}
+
+.f11 img,
+p {
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.f11 p {
+  color: white;
+  font-size: 35px;
+}
+
+.f11:hover p {
+  color: white;
+  font-size: 25px;
+}
+
+.f11:hover img {
+  transform: scale(0.9);
+}
+
+.f11 {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  width: 100vw; /* 100% ширины окна браузера */
+  height: 100vh; /* 100% высоты окна браузера */
+}
+
+.block-1.active {
+  background: #ffbb27;
+  width: 100%;
+  height: 100%;
+}
+
+.block-2.active {
+  background: #74ff18;
+  width: 100%;
+  height: 100%;
+}
+
+.block-3.active {
+  background: #21ff85;
+  width: 100%;
+  height: 100%;
+}
+
+.block-4.active {
+  background: #22cbff;
+  width: 100%;
+  height: 100%;
+}
+
+.block-5.active {
+  background: #b61aff;
+  width: 100%;
+  height: 100%;
+}
+
+.block-6.active {
+  background: #ff20a2;
+  width: 100%;
+  height: 100%;
+}
+
+.block-1.active,
+.block-2.active,
+.block-3.active,
+.block-4.active,
+.block-5.active,
+.block-6.active {
+  z-index: 999;
+}
+
+.block-1.active h2,
+.block-2.active h2,
+.block-3.active h2,
+.block-4.active h2,
+.block-5.active h2,
+.block-6.active h2 {
+  transform: scale(1.5);
+}
+
+.block-1.active h3,
+.block-2.active h3,
+.block-3.active h3,
+.block-4.active h3,
+.block-5.active h3,
+.block-6.active h3 {
+  transform: scale(1.1);
+}
+
+.block-1.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  opacity: 0;
+  transition: 0.5 s;
+}
+
+.block-2.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.block-3.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.block-4.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.block-5.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.block-6.active .close-button {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 90px;
+  color: white;
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  padding: 5px;
+  opacity: 1;
+  transition: 0.5s;
+}
